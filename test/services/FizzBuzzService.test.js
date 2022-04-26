@@ -9,7 +9,7 @@ describe("Unit Tests for FizzBuzzService Class", () => {
     
     const explorer3 = { name: "Explorer3", score: 3 };
     const validation2 = FizzbuzzService.applyValidationInExplorer(explorer3); // {name: "Explorer3", score: 3, trick: "FIZZ"}
-    expect(validation2.trick).toBe(3)
+    expect(validation2.trick).toBe("FIZZ")
 
     const explorer5 = { name: "Explorer5", score: 5 };
     const validation3 = FizzbuzzService.applyValidationInExplorer(explorer5); // {name: "Explorer5", score: 5, trick: "BUZZ"}
