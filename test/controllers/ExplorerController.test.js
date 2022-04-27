@@ -5,6 +5,13 @@ describe("Unit Tests for ExplorerController Class", () => {
         const listOfExplorers = ExplorerController.getExplorersByMission("java");
         expect(listOfExplorers).not.toBeUndefined();
     });
+
+    test("Getting list of usernames of explorers by mission", () => {
+        const usernamesOfExplorers = ExplorerController.getExplorersUsernamesByMission("node");
+        expect(usernamesOfExplorers).not.toBeUndefined();
+        expect(usernamesOfExplorers.length).toBeGreaterThan(0);
+    });
+
     
 
 });
