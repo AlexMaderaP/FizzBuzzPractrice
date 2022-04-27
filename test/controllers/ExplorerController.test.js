@@ -12,8 +12,15 @@ describe("Unit Tests for ExplorerController Class", () => {
         expect(usernamesOfExplorers.length).toBeGreaterThan(0);
     });
 
-    test("Getting Amoun  of explorers by mission", () => {
+    test("Getting Amount of explorers by mission", () => {
         const amountOfExplorers = ExplorerController.getExplorersAmonutByMission("node");
         expect(amountOfExplorers).toBeGreaterThan(0);
+    });
+
+    test("Using FizzBuzz Service method", () => {
+        expect(ExplorerController.getValidationByNumber(1)).toEqual(1);
+        expect(ExplorerController.getValidationByNumber(6)).toBe("FIZZ");
+        expect(ExplorerController.getValidationByNumber(10)).toBe("BUZZ");
+        expect(ExplorerController.getValidationByNumber(30)).toBe("FIZZBUZZ");
     });
 });
