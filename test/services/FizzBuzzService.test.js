@@ -19,4 +19,11 @@ describe("Unit Tests for FizzBuzzService Class", () => {
         const validation4 = FizzbuzzService.applyValidationInExplorer(explorer15); // {name: "Explorer15", score: 15, trick: "FIZZBUZZ"}
         expect(validation4.trick).toBe("FIZZBUZZ");
     });
+
+    test("Applyin validation for number ", () => {
+        expect(FizzbuzzService.applyValidationInNumber(30)).toBe("FIZZBUZZ"); 
+        expect(FizzbuzzService.applyValidationInNumber(5)).toBe("BUZZ"); 
+        expect(FizzbuzzService.applyValidationInNumber(6)).toBe("FIZZ"); 
+        expect(FizzbuzzService.applyValidationInNumber(1)).toEqual(1); 
+    });
 });
