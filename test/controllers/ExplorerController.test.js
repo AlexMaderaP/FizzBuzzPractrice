@@ -12,6 +12,13 @@ describe("Unit Tests for ExplorerController Class", () => {
         expect(usernamesOfExplorers.length).toBeGreaterThan(0);
     });
 
+    test("Getting Amoun  of explorers by mission", () => {
+        const amountOfExplorers = ExplorerController.getExplorersAmonutByMission("node");
+        expect(amountOfExplorers).toBeGreaterThan(0);
+    });
+
+    
+
     
 
 });
