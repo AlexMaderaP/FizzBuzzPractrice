@@ -16,9 +16,4 @@ describe("Unit Tests for ExplorerController Class", () => {
         const amountOfExplorers = ExplorerController.getExplorersAmonutByMission("node");
         expect(amountOfExplorers).toBeGreaterThan(0);
     });
-
-    
-
-    
-
 });
