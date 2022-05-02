@@ -32,7 +32,8 @@ describe("Unit Tests for ExplorerController Class", () => {
     });
 
     test("Getting names of explorers by mission", () => {
-        
+          const namesExplorersInJava = ExplorerController.getExplorersNamesByMission("java");
+          expect(namesExplorersInJava).toMatch(/Woopa/);
         
     });
 
