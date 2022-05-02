@@ -23,4 +23,17 @@ describe("Unit Tests for ExplorerController Class", () => {
         expect(ExplorerController.getValidationByNumber(10)).toBe("BUZZ");
         expect(ExplorerController.getValidationByNumber(30)).toBe("FIZZBUZZ");
     });
+
+    test("Using FizzBuzz Service Bot method", () => {
+        expect(ExplorerController.getValidationByNumberForBot(1)).toBe(`Tu número es: 1. Validación: 1`);
+        expect(ExplorerController.getValidationByNumberForBot(5)).toBe(`Tu número es: 5. Validación: BUZZ`);
+        expect(ExplorerController.getValidationByNumberForBot(15)).toBe(`Tu número es: 15. Validación: FIZZBUZZ`);
+        
+    });
+
+    test("Getting names of explorers by mission", () => {
+        
+        
+    });
+
 });
