@@ -21,4 +21,15 @@ describe("Unit Tests for ExplorerService Class", () => {
         const UsernamesExplorersInJava = ExplorerService.getExplorersUsernamesByMission(explorers, "java");
         expect(UsernamesExplorersInJava).toContain("ajolonauta6");
     });
+
+  test("Get Names of Explorers by Mission", () => {
+    const explorers = [
+      { name: "Juan", mission: "node" },
+      { name: "Carlos", mission: "java" },
+      { name: "Alex", mission: "node"},
+    ];
+    const namesExplorersInJava =
+      ExplorerService.getExplorersNamesByMission(explorers, "java");
+    expect(namesExplorersInJava).toMatch(/Carlos/);
+  });
 });
